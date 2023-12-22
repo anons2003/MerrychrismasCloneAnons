@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Luis Roberto Machorro Aguilar-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilo3.css" />
+  <title>Merry Christmas</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/arbol-de-navidad.png" />
+
+  <script src="./jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="js/Custom.js"></script>
+</head>
+<!--body style="background-color: rgb(92,0,0)"-->
+<!--<body background="./images/snoppy.jpg">-->
+
+<body>
+
+
+  <video src="./images/Fondo De Navidad - 57586.mp4" autoplay="true" muted="true" loop="true"> </video>
+  <div class="arbol-container">
+
+    <!--
+    <div class="actions">
+   <button id="start">Comenzar</button>
+   <input type="number" id="velocidad" min="0.1" max="3" step="0.1">
+   <select id="variacion">
+     <option value ="1">Opcion 1</option>
+     <option value ="2">Opcion 2</option>
+     <option value ="3">Opcion 3</option>
+     </select>
+  -->
+    <div>
+      <div class="probando">
+
+        <div class="estrella">
+          <img src="./images/estrella11 (2).png" class="brilla">
+          <!-- <div class="neons">
+      <h3><em>Merry Christmas</em></h3>
+   </div>
+-->
+          <section class="fijando">
+            <br>
+            <span>M</span>
+            <span>e</span>
+            <span>r</span>
+            <span>r</span>
+            <span>r</span>
+            <span>y</span>
+            <br>
+            <span>C</span>
+            <span>h</span>
+            <span>r</span>
+            <span>i</span>
+            <span>s</span>
+            <span>t</span>
+            <span>m</span>
+            <span>a</span>
+            <span>s</span>
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+    <img src="./images/arbol.png" class="arbol">
+
+    <div class="balls">
+
+      <img src="./images/ba.png" class="bola-ba1">
+      <img src="./images/ba.png" class="bola-ba2">
+      <img src="./images/ba.png" class="bola-ba6">
+      <img src="./images/ba.png" class="bola-ba5">
+      <img src="./images/ba.png" class="bola-ba7">
+      <img src="./images/ba.png" class="bola-ba4">
+      <img src="./images/ba.png" class="bola-ba3">
+
+
+      <div>
+
+        <!--<img src="./images/regalo.png" class="regalo">-->
+        <a href="Card.html"><img class="regalo" src="./images/regalo.png"
+            onmouseover="this.src='./images/suprised.png';" onmouseout="this.src='./images/regalo.png';" /></a>
+        <a href="https://www.facebook.com/messages/t/100002891208458/">
+          <img class="regalo2" src="./images/regalo.png" onmouseover="this.src='./images/chocolate.png';"
+            onmouseout="this.src='./images/regalo.png';" />
+        </a>
+
+      </div>
+      <h2> Bấm vào hộp quà nè !! 🎁</h2>
+    </div>
+  </div>
+
+  <audio id="myAudio" controls>
+    <source src="song/ssstik.io_1703236272169.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Get the audio element
+    var audio = document.getElementById('myAudio');
+
+    // Function to play the audio
+    function playAudio() {
+      audio.play();
+      audio.volume = 0.1;
+    }
+
+    // Autoplay the audio when the page loads or reloads
+    window.addEventListener('load', playAudio);
+    window.addEventListener('beforeunload', playAudio);
+  </script>
+  <script src="index2.js"></script>
+</body>
+
+</html>
