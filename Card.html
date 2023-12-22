@@ -35,9 +35,20 @@
         <br>
         With great affection Anonslove.... 💓 💓 💒<img src="./images/chatbot.png" class="auto">
         <br>
-        <a class="gif" href="https://www.facebook.com/messages/t/100002891208458/"> Bấm Vào Hộp Quà !! <img
-            src="./images/regalo.png" class="auto"> </a>
+                <a class="gif" href="#" onclick="openChat();">Bấm Vào Hộp Quà !! <img src="./images/regalo.png" class="auto"></a>
 
+        <script>
+        function openChat() {
+            // Kiểm tra nếu đang truy cập trên điện thoại
+            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                // Nếu là điện thoại, mở liên kết cho ứng dụng Messenger
+                window.location.href = "fb-messenger://user-thread/100002891208458/";
+            } else {
+                // Nếu là máy tính, mở liên kết trên trình duyệt
+                window.open("https://www.facebook.com/messages/t/100002891208458/", "_blank");
+            }
+        }
+        </script>
 
 
       </p>
