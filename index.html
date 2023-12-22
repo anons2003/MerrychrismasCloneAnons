@@ -87,10 +87,25 @@
         <!--<img src="./images/regalo.png" class="regalo">-->
         <a href="Card.html"><img class="regalo" src="./images/regalo.png"
             onmouseover="this.src='./images/suprised.png';" onmouseout="this.src='./images/regalo.png';" /></a>
-        <a href="https://www.facebook.com/messages/t/100002891208458/">
-          <img class="regalo2" src="./images/regalo.png" onmouseover="this.src='./images/chocolate.png';"
-            onmouseout="this.src='./images/regalo.png';" />
-        </a>
+<a id="messageLink" href="#">
+  <img class="regalo2" src="./images/regalo.png"
+    onmouseover="this.src='./images/chocolate.png';"
+    onmouseout="this.src='./images/regalo.png';" />
+</a>
+
+<script>
+document.getElementById("messageLink").addEventListener("click", function(event) {
+    // Kiểm tra nếu là điện thoại di động
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        window.location.href = "fb-messenger://user-thread/100002891208458/";
+    } else {
+        // Mở trên trình duyệt máy tính
+        window.open("https://www.facebook.com/messages/t/100002891208458/", "_blank");
+    }
+    event.preventDefault(); // Ngăn chặn chuyển hướng mặc định của thẻ a
+});
+</script>
+
 
       </div>
       <h2> Bấm vào hộp quà nè !! 🎁</h2>
